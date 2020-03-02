@@ -236,6 +236,7 @@ hr {
 
 /* Propiedades columna registro y contacto derecha */
 .inputDerecha{
+        display: flex;
     margin-left: 1000px;
     border: 1px solid #061e37;
     border-radius: 5px;
