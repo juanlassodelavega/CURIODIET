@@ -5,12 +5,14 @@
         width: 400px;
     }
 
+    /* Barra de navegación superior */
     #navegador ul{ 
         list-style-type: none;
         margin-left: -420px;
         width: 100px;
     }
 
+    /* Barra de navegación superior */
     #navegador li{
         font-family: "Raleway", sans-serif;
         font-weight: 600;
@@ -20,16 +22,19 @@
         font-size: 20px;
     }
 
+    /* Barra de navegación superior */
     #navegador li a {
         padding: 2px 7px 2px 7px;
         color: white;
         text-decoration: none;
     }
 
+    /* Barra de navegación superior */
     #navegador li a:hover{
         color: black;
     }  
 
+    /* Barra de navegación superior (boton login) */
     #login{
         display: flex;
         width: 100px;
@@ -40,28 +45,20 @@
         border: solid 2px white;
     }
 
+    /* Linea horizontal */
     hr {
         margin-left: 40px;
         width: 90%;
         background-color: white;
     }
 
+    /* index.html */
     .text{
         margin-left: 60px;
         margin-right: 600px;
         margin-top: -150px;
     }
-    
-    .text h3 {
-        color: #fff;
-        font-family: "Raleway", sans-serif;
-        font-size: 55px;
-        font-weight: 800;
-        letter-spacing: 1px;
-        line-height: 65px;
-        text-transform: uppercase;
-    }
-    
+
     .text h6 {
         width: 345px;
         text-align: justify;
@@ -73,20 +70,79 @@
         margin-bottom: 52px;
         margin-top: 20px;
     }
-    
+
     .header_foto{
         display: flex;
         border: solid 2px black;
         box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.15);
         margin-left: -930px;
         margin-top: 460px;
+        margin-bottom: 20px;
     }
 
     .header_foto img{
         width: 300px; 
         height: 200px;
     }
-    
+
+    /* dietas.html */
+    .dietas{
+        margin-left: -250px;
+        margin-right: 600px;
+    }
+
+    .dietas h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .dietas h6{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-top: 20px;
+        width: 400px;
+        text-align: justify;
+        padding-left: 75px;
+    }
+
+    /* Cuadro dietas izquierda (dietas.html)*/
+    #izquierda{
+        width: 350px;
+        height: fit-content; 
+        border: 1px solid black;
+        margin-top: -10px;
+        margin-left: 55px;
+    }
+
+    /* Cuadro dietas centro (dietas.html)*/
+    #centro{
+        width: 350px;
+        height: fit-content; 
+        border: 1px solid black;
+        margin-left: 55px;
+        margin-top: 50px;
+    }
+
+    /* Cuadro dietas derecha (dietas.html)*/
+    #derecha{
+        width: 350px;
+        height: fit-content;
+        border: 1px solid black;
+        margin-left: 55px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

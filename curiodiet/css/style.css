@@ -88,7 +88,7 @@ hr {
     margin-top: 20px;
 }
 
-/* index.html */
+/* index.html (propiedades foto) */
 .header_foto{
     border: solid 2px black;
     box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.15);
@@ -96,6 +96,7 @@ hr {
     margin-top: -270px;
 }
 
+/* index.html (dimensiones img) */
 .header_foto img{
     width: 581px; 
     height: 318px;
@@ -116,7 +117,6 @@ hr {
     letter-spacing: 1px;
     line-height: 65px;
     text-transform: uppercase;
-
     margin-left: 88%;
     text-align: center;
 }
@@ -130,38 +130,34 @@ hr {
     line-height: 35px;
     margin-bottom: 52px;
     margin-top: 20px;
-
     width: 775px;
     margin-left: 60%;
     text-align: center;
 }
 
-/* Cuadro dietas izquierda */
+/* Cuadro dietas izquierda (dietas.html)*/
 #izquierda{
 	width: 500px;
 	height: fit-content; 
     border: 1px solid black;
-    
     margin-top: 20px;
     margin-left: 130px;
 }
 
-/* Cuadro dietas centro */
+/* Cuadro dietas centro (dietas.html)*/
 #centro{
 	width: 500px;
 	height: fit-content; 
     border: 1px solid black;
-    
     margin-left: 730px;
     margin-top: -498px;
 }
 
-/* Cuadro dietas derecha */
+/* Cuadro dietas derecha (dietas.html)*/
 #derecha{
 	width: 500px;
 	height: fit-content;
     border: 1px solid black;
-    
     margin-left: 1330px;
     margin-top: -498px;
 }
@@ -170,7 +166,6 @@ hr {
 .header_text{
     width: 650px;   
     margin-top: 20px;
-
     border: 1px solid rgb(6, 30, 55);
     border-radius: 6px;
     box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.15);
