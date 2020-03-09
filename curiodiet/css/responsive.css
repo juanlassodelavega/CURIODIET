@@ -143,6 +143,186 @@
         margin-bottom: 50px;
     }
 
+    /* registro.html */
+    .registro{
+        margin-left: -575px;
+        margin-right: 600px;
+    }
+
+    /* registro.html */
+    .registro h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 602px;
+    }
+
+    /* registro.html */
+    .registro h6{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-top: 20px;
+        width: 400px;
+        text-align: center;
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+    
+    /* Propiedades columna registro y contacto izquierda */
+    .registroIzquierda{
+        margin-top: -40px;
+    }
+
+    .inputIzquierda{
+        display: flex;
+        margin-top: 40px;
+        margin-left: -3px;
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 278px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+    }
+
+    /* Propiedades columna registro y contacto derecha */
+    .registroDerecha{
+        margin-top: 40px;
+    }
+
+    .inputDerecha{
+        display: flex;
+        margin-left: 97px;
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        padding: 15px 20px;
+        width: 278px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+    }
+
+    /* Columna registro centro */
+    .registroCentro1{
+        margin-top: -20px;
+        margin-left: 97px;
+    }
+
+    /* Propiedades columna registro y contacto centro */
+    .inputCentro{
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        width: 278px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+    }
+
+    /* Boton registro */
+    #botonRegistro{
+        margin-left: 130px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        padding: 15px 20px;
+        width: 200px;
+        color: white;
+        background: #1de9b6 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 5px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    /* contacto.html */
+    .contacto{
+        margin-left: -260px;
+        margin-right: 600px;
+    }
+
+    /* contacto.html */
+    .contacto h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        margin-left: 80%;
+        text-align: center;
+    }
+
+    /* contacto.html */
+    .contacto h6{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-top: 20px;
+        width: 400px;
+        margin-left: 72%;
+        text-align: center  ;
+    }
+    /* Columna contacto izquierda */
+    .contactoIzquierda{
+        margin-top: -40px;
+        margin-left: 95px;
+    }
+
+    /* Columna contacto derecha */
+    .contactoDerecha{
+        margin-top: 40px;
+        margin-left: -5px;
+    }
+
+    /* Columna contacto centro */
+    #inputCentro{
+        margin-left: 92px;
+        width: 278px;
+        height: 150px;
+    }
+
+    #checkbox{
+        margin-left: 110px;
+    }
+
+    /* Boton contacto */
+    #botonContacto{
+        margin-left: 130px;
+        margin-bottom: 40px;
+        padding: 15px 20px;
+        width: 200px;
+        color: white;
+        background: #1de9b6 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 5px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
