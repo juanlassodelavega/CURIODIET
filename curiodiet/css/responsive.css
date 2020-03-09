@@ -1,3 +1,115 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        background-color: #23DED0;
+        width: 400px;
+    }
+
+    #navegador ul{ 
+        list-style-type: none;
+        margin-left: -420px;
+        width: 100px;
+    }
+
+    #navegador li{
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        display: inline;
+        text-align: center;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    #navegador li a {
+        padding: 2px 7px 2px 7px;
+        color: white;
+        text-decoration: none;
+    }
+
+    #navegador li a:hover{
+        color: black;
+    }  
+
+    #login{
+        display: flex;
+        width: 100px;
+        font-weight: 100;
+        margin-top: -95px;
+        margin-left: 260px;
+        border-radius: 6px;
+        border: solid 2px white;
+    }
+
+    hr {
+        margin-left: 40px;
+        width: 90%;
+        background-color: white;
+    }
+
+    .text{
+        margin-left: 60px;
+        margin-right: 600px;
+        margin-top: -150px;
+    }
+    
+    .text h3 {
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+    }
+    
+    .text h6 {
+        width: 345px;
+        text-align: justify;
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-top: 20px;
+    }
+    
+    .header_foto{
+        display: flex;
+        border: solid 2px black;
+        box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.15);
+        margin-left: -930px;
+        margin-top: 460px;
+    }
+
+    .header_foto img{
+        width: 300px; 
+        height: 200px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
 /* @media (min-width: 1400px) and (max-width: 1500px) {
     .verticalCarouselGroup.vc_list>li .vertical_text p {
         height: 75px;

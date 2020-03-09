@@ -52,6 +52,13 @@ div{
     background-color: #23DED0;
 }
 
+/* Linea horizontal */
+hr {
+    margin-left: 500px;
+    width: 100%;
+    background-color: white;
+}
+
 /* index.html */
 .text{
     margin-left: 250px;
@@ -89,11 +96,9 @@ div{
     margin-top: -270px;
 }
 
-/* Linea horizontal */
-hr {
-    margin-left: 500px;
-    width: 100%;
-    background-color: white;
+.header_foto img{
+    width: 581px; 
+    height: 318px;
 }
 
 /* dietas.html */
@@ -236,7 +241,7 @@ hr {
 
 /* Propiedades columna registro y contacto derecha */
 .inputDerecha{
-        display: flex;
+    display: flex;
     margin-left: 1000px;
     border: 1px solid #061e37;
     border-radius: 5px;
