@@ -572,12 +572,6 @@
         height: 250px;
     }
 
-    /* dietas.html */
-    .dietas{
-        /* margin-left: -400px; */
-        /* margin-right: 600px; */
-    }
-
     .dietas h3{
         margin-left: 50px;
         color: #fff;
@@ -630,12 +624,6 @@
         margin-left: 155px;
         margin-top: 50px;
         margin-bottom: 50px;
-    }
-
-    /* registro.html */
-    .registro{
-        /* margin-left: -575px;
-        margin-right: 600px; */
     }
 
     /* registro.html */
@@ -741,12 +729,6 @@
         font-size: 16px;
         font-weight: 500;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
-    }
-
-    /* contacto.html */
-    .contacto{
-        /* margin-left: -260px;
-        margin-right: 600px; */
     }
 
     /* contacto.html */
@@ -980,12 +962,481 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    html{
+        background-color: #23DED0;
+        width: 768px;
+    }
 
-}
+    /* Barra de navegación superior */
+    #navegador ul{ 
+        list-style-type: none;
+        margin-left: -350px;
+        width: 1000px;
+    }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+    /* Barra de navegación superior */
+    #navegador li{
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        display: inline;
+        text-align: center;
+        margin-left: 40px;
+        font-size: 20px;
+    }
 
+    /* Barra de navegación superior */
+    #navegador li a {
+        padding: 2px 7px 2px 7px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Barra de navegación superior */
+    #navegador li a:hover{
+        color: black;
+    }  
+
+    /* Barra de navegación superior (boton login) */
+    #login{
+        display: flex;
+        width: 140px;
+        font-weight: 100;
+        margin-top: -35px;
+        margin-left: 700px;
+        border-radius: 6px;
+        border: solid 2px white;
+    }
+
+    /* Linea horizontal */
+    hr {
+        margin-left: 100px;
+        width: 70%;
+        background-color: white;
+    }
+
+    /* index.html */
+    .text{
+        margin-left: 100px;
+        margin-right: 700px;
+        margin-top: 100px;
+    }
+
+    .text h3 {
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+    }
+
+    .text h6 {
+        width: 850px;
+        text-align: justify;
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;    
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-top: 20px;
+    }
+
+    .header_foto{
+        display: flex;
+        border: solid 2px black;
+        box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.15);
+        margin-left: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header_foto img{
+        width: 500px; 
+        height: 250px;
+    }
+
+    .dietas h3{
+        margin-left: 250px;
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .dietas h6{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-left: 150px;
+        margin-top: 20px;
+        width: 650px;
+        text-align: center;
+        padding-left: 75px;
+    }
+
+    /* Cuadro dietas izquierda (dietas.html)*/
+    #izquierda{
+        width: 500px;
+        height: fit-content; 
+        border: 1px solid black;
+        margin-top: -10px;
+        margin-left: 255px;
+    }
+
+    /* Cuadro dietas centro (dietas.html)*/
+    #centro{
+        width: 500px;
+        height: fit-content; 
+        border: 1px solid black;
+        margin-left: 255px;
+        margin-top: 50px;
+    }
+
+    /* Cuadro dietas derecha (dietas.html)*/
+    #derecha{
+        width: 500px;
+        height: fit-content;
+        border: 1px solid black;
+        margin-left: 255px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    /* registro.html */
+    .registro h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 250px;
+    }
+
+    /* registro.html */
+    .registro h6{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 270px;
+        padding-right: 20px;
+    }
+    
+    /* Propiedades columna registro y contacto izquierda */
+    .registroIzquierda{
+        margin-top: -40px;
+    }
+
+    .inputIzquierda{
+        display: flex;
+        margin-top: 40px;
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 278px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+        margin-left: 275px;
+    }
+
+    /* Propiedades columna registro y contacto derecha */
+    .registroDerecha{
+        margin-top: 40px;
+    }
+
+    .inputDerecha{
+        display: flex;
+        margin-left: 97px;
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        padding: 15px 20px;
+        width: 278px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+        margin-left: 375px;
+    }
+
+    /* Columna registro centro */
+    .registroCentro1{
+        margin-top: -20px;
+        margin-left: 375px;
+    }
+
+    /* Propiedades columna registro y contacto centro */
+    .inputCentro{
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        width: 278px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+    }
+
+    /* Boton registro */
+    #botonRegistro{
+        margin-left: 410px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        padding: 15px 20px;
+        width: 200px;
+        color: white;
+        background: #1de9b6 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 5px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    /* contacto.html */
+    .contacto h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        margin-left: 125px;
+        text-align: center;
+    }
+
+    /* contacto.html */
+    .contacto h6{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-top: 20px;
+        width: 800px;
+        margin-left: 125px;
+        text-align: center;
+    }
+    /* Columna contacto izquierda */
+    .contactoIzquierda{
+        margin-top: -40px;
+        margin-left: 100px;
+    }
+
+    /* Columna contacto derecha */
+    .contactoDerecha{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    /* Columna contacto centro */
+    #inputCentro{
+        margin-left: 375px;
+        width: 278px;
+        height: 150px;
+    }
+
+    #checkbox{
+        margin-left: 395px;
+    }
+
+    /* Boton contacto */
+    #botonContacto{
+        margin-left: 410px;
+        margin-bottom: 40px;
+        padding: 15px 20px;
+        width: 200px;
+        color: white;
+        background: #1de9b6 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 5px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    /* login.html */
+    .login{
+        margin-top: 50px;
+    }
+
+    .login h3{
+        width: 600px;
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        margin-left: 250px;
+        text-align: center;
+    }
+
+    .loginArriba{
+        margin-top: 50px;
+    }
+    
+    .inputArriba{
+        margin-left: 400px;
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        width: 278px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+    }
+
+    #botonLogin{
+        margin-left: 435px;
+        margin-top: 20px;
+        padding: 15px 20px;
+        width: 200px;
+        color: white;
+        background: #1de9b6 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 5px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    /* usuario.html */
+    .usuario{
+        margin-top: 50px;
+    }
+
+    .usuario h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        width: 650px;
+        line-height: 65px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 220px;
+    }
+
+    .usuario h6{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 52px;
+        margin-top: 20px;
+        width: 775px;
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    /* linea vertical usuario.html */
+    .vl {
+        border-left: 0px;
+    }
+
+        /* datos izquierda usuario.html */
+    .datosIzquierda{
+        margin-left: 150px;
+    }
+
+    .datosIzquierda h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        width: 600px;
+        line-height: 65px;
+        text-transform: uppercase;
+    }
+    
+    /* datos izquierda usuario.html */
+    .datosIzquierda h4{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+    }
+
+    /* datos derecha usuario.html */
+    .datosDerecha{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+
+    .datosDerecha h3{
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 65px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }    
+    
+    /* input derecha usuario.html */
+    #input_area{
+        border: 1px solid #061e37;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        width: 250px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(6, 30, 55);
+    }
+
+    /* boton derecha usuario.html */
+    #botonAñadir{
+        margin-left: 50px;
+        padding: 15px 20px;
+        width: 150px;
+        color: white;
+        background: #1de9b6 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 5px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
