@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CURIODIET</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- Firestore -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    </head>
+<body>
+    <div class="row align-items-center">
+        <div class="col-md-12 header" id="navegador"> 
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="dietas.html">Dietas</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>       
+            <li><a href="login.html" id="login">Iniciar Sesión</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="registro">
+        <h3>¡Registrate!</h3>
+        <h6>Registrate ahora para que podamos crearte dietas especializadas.</h6>
+    </div>
+
+<section>
+    <form>
+        <div class="registroIzquierda">
+            <input type="text" class="inputIzquierda" placeholder="Nombre" id="nombre">
+            <input type="text" class="inputIzquierda" placeholder="Apellido" id="apellido">
+            <input type="text" class="inputIzquierda" placeholder="Edad" id="edad">
+            <input type="text" class="inputIzquierda" placeholder="Telefono" id="telefono">
+        </div>
+        <div class="registroDerecha">
+            <input type="text" class="inputDerecha" placeholder="Peso (kg)" id="peso">
+            <input type="text" class="inputDerecha" placeholder="Estatura (cm)" id="estatura">
+            <input type="text" class="inputDerecha" placeholder="País" id="pais">
+            <input type="text" class="inputDerecha" placeholder="Masculino o Femenino" id="sexo">
+        </div>
+        <div class="registroCentro1">
+            <div>
+                <input type="email" class="inputCentro" placeholder="Direccion de email" id="email">
+        </div>
+        <div class="registroCentro2">
+                <input type="password" class="inputCentro" placeholder="Contraseña" id="password">
+            </div>
+        </div>
+            <div>
+                <input type="submit" onclick="guardar()" id="botonRegistro" value="Registrarse">
+            </div>
+        </div>
+    </form>
+</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/registro.js"></script>
+  </body>
+</html>
