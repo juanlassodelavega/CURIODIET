@@ -16,6 +16,7 @@
         
   
 var db = firebase.firestore();
+var nuevoID;
 
 // Agregar documentos
 function guardar(){
@@ -30,42 +31,44 @@ function guardar(){
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(data){
-        console.log(data.user.uid);
+    console.log("Prueba 1 ok")
+
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(userCredential) {
+        nuevoID = userCredential.user.uid;
+        console.log(nuevoID);
+        db.collection("usuarios").doc(nuevoID).set({
+            nombre: nombre,
+            apellido: apellido,
+            edad: edad,
+            telefono: telefono,
+            peso: peso,
+            estatura: estatura,
+            pais: pais,
+            sexo: sexo,
+            email: email
+        })
+
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
-      });
+    //   }).then(function(docRef) {
+    //     console.log("Document written with ID: ", docRef.id);
+    //     document.getElementById('nombre').value = '';
+    //     document.getElementById('apellido').value = '';
+    //     document.getElementById('edad').value = '';
+    //     document.getElementById('telefono').value = '';
+    //     document.getElementById('peso').value = '';
+    //     document.getElementById('estatura').value = '';
+    //     document.getElementById('pais').value = '';
+    //     document.getElementById('sexo').value = '';
+    //     document.getElementById('email').value = '';
 
-    db.collection("usuarios").add({
-        nombre: nombre,
-        apellido: apellido,
-        edad: edad,
-        telefono: telefono,
-        peso: peso,
-        estatura: estatura,
-        pais: pais,
-        sexo: sexo,
-        email: email
-    })
-    .then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
-        document.getElementById('nombre').value = '';
-        document.getElementById('apellido').value = '';
-        document.getElementById('edad').value = '';
-        document.getElementById('telefono').value = '';
-        document.getElementById('peso').value = '';
-        document.getElementById('estatura').value = '';
-        document.getElementById('pais').value = '';
-        document.getElementById('sexo').value = '';
-        document.getElementById('email').value = '';
-
-        location.href="login.html";
-    })
+    //     // location.href="login.html";
+    // })
     
-    .catch(function(error) {
-        console.error("Error adding document: ", error);
+    // .catch(function(error) {
+    //     console.error("Error adding document: ", error);
     });
 }
