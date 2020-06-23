@@ -17,19 +17,7 @@
 
 var db = firebase.firestore();
 var currentUser;
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-      currentUser = user.uid;
-      console.log(currentUser); //this returns my user object 
-      window.localStorage.setItem("UID",currentUser);
-  } else {
-      currentUser = "Error"
-      console.log(currentUser); //this returns my user object 
-      window.localStorage.setItem("UID",currentUser);
-       alert(" Error in your login code");
-    // No user is signed in.
-  }
-});
+
 
 window.onload = function() {
     // var aaaaaa = sessionStorage.getItem("correo");
@@ -38,7 +26,8 @@ window.onload = function() {
   }
 
 function entrada(){
-    var docRef = db.collection('usuarios').doc(currentUser.uid);
+    var logUser = window.sessionStorage.getItem("UID");
+    var docRef = db.collection('usuarios').doc(logUser);
     docRef.get().then(function(doc) {
         if (doc.exists) {
             console.log("Document data:", doc.data());
