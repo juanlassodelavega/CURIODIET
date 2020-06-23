@@ -53,20 +53,27 @@ function login(){
 }
 
 function observar(){
-
-    var user = firebase.auth().currentUser;
-    if (user) {
-        // console.log('estas dentro prro')
-        var iduser = firebase.auth().currentUser.uid;
-        console.log(iduser);
-
-        var usuario = db.ref('/usuarios/' + userId).once('value').then(function(snapshot){
-            var nUsuario = snapshot.val().nombre;
-        });
-        console.log(nUsuario);
-        // location.href="index.html";
-    } else {
-        console.log('tu aqui no eta')
-    }
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            var usuarioLog = user.uid;
+            console.log(usuarioLog); //this returns my user object 
+            window.sessionStorage.setItem("UID", usuarioLog);
+        } else {
+           console.log ('nanai')
+        }
+      });
+    // if (user) {
+    //     // console.log('estas dentro prro')
+    //     // var iduser = firebase.auth().currentUser.uid;
+    //     // console.log(iduser);
+    //     // window.localStorage.setItem("UID",);
+    //     var usuario = db.ref('/usuarios/' + userId).once('value').then(function(snapshot){
+    //         var nUsuario = snapshot.val().nombre;
+    //     });
+    //     console.log(nUsuario);
+    //      location.href="index.html";
+    // } else {
+    //     console.log('tu aqui no eta')
+    // }
 
 }
