@@ -57,10 +57,10 @@ function entrada(){
             console.log(doc.get("cena"));
             document.getElementById('dietas').innerHTML = "<h3>Dieta que sigo</h3>"+
             "<br>"+
-            "<h4> Desayuno: " + doc.get("desayuno") + "</h4>" +
-            "<h4> Media mañana: " + doc.get("media_manana") + "</h4>" +
-            "<h4> Comida: " + doc.get("comida") + "</h4>" +
-            "<h4> Media tarde: " + doc.get("media_tarde") + "</h4>" +
+            "<h4> Desayuno: " + doc.get("desayuno") + "</h4>" + "<br>" +
+            "<h4> Media mañana: " + doc.get("media_manana") + "</h4>" + "<br>" +
+            "<h4> Comida: " + doc.get("comida") + "</h4>" + "<br>" +
+            "<h4> Media tarde: " + doc.get("media_tarde") + "</h4>" + "<br>" +
             "<h4> Cena: " + doc.get("cena") + "</h4>"
         })
     });
