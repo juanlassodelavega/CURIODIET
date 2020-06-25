@@ -45,11 +45,25 @@ function login(){
      alert(errorMessage);
     }
     console.log(error);
-    });
+    }).then(function(){
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                var usuarioLog = user.uid;
+                console.log(usuarioLog); //this returns my user object 
+                sessionStorage.setItem("UID", usuarioLog);
+                console.log('hasta aqui bien');
+                location.href="usuario.html";
+            } else {
+               console.log ('nanai')
+            }
+    
+           
+          })
+    })
 
     console.log('hola otra ves')
     
-    observar();
+    // observar();
 }
 
 function observar(){
@@ -57,23 +71,14 @@ function observar(){
         if (user) {
             var usuarioLog = user.uid;
             console.log(usuarioLog); //this returns my user object 
-            window.sessionStorage.setItem("UID", usuarioLog);
+            sessionStorage.setItem("UID", usuarioLog);
+            console.log('hasta aqui bien');
+            location.href="usuario.html";
         } else {
            console.log ('nanai')
         }
+
+       
       });
-    // if (user) {
-    //     // console.log('estas dentro prro')
-    //     // var iduser = firebase.auth().currentUser.uid;
-    //     // console.log(iduser);
-    //     // window.localStorage.setItem("UID",);
-    //     var usuario = db.ref('/usuarios/' + userId).once('value').then(function(snapshot){
-    //         var nUsuario = snapshot.val().nombre;
-    //     });
-    //     console.log(nUsuario);
-    //      location.href="index.html";
-    // } else {
-    //     console.log('tu aqui no eta')
-    // }
 
 }
