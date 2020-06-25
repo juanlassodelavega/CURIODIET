@@ -46,6 +46,7 @@ body{
     margin-left: 400px;
     border-radius: 6px;
     border: solid 2px white;
+    background-color: #0b3b6e;
 }
 
 div{
@@ -79,6 +80,10 @@ hr {
 
 /* index.html */
 .text h6 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0b3b6e;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -142,6 +147,7 @@ hr {
     border: 1px solid black;
     margin-top: 20px;
     margin-left: 130px;
+    background-color:#0b3b6e;
 }
 
 /* Cuadro dietas centro (dietas.html)*/
@@ -151,6 +157,7 @@ hr {
     border: 1px solid black;
     margin-left: 730px;
     margin-top: -498px;
+    background-color:#0b3b6e;
 }
 
 /* Cuadro dietas derecha (dietas.html)*/
@@ -160,6 +167,7 @@ hr {
     border: 1px solid black;
     margin-left: 1330px;
     margin-top: -498px;
+    background-color:#0b3b6e;
 }
 
 /* dietas.html */
@@ -271,7 +279,7 @@ hr {
     padding: 15px 20px;
     width: 200px;
     color: white;
-    background: #1de9b6 none repeat scroll 0 0;
+    background: #0b3b6e none repeat scroll 0 0;
     border: medium none;
     border-radius: 5px;
     font-family: "Raleway", sans-serif;
@@ -337,7 +345,7 @@ hr {
     padding: 15px 20px;
     width: 200px;
     color: white;
-    background: #1de9b6 none repeat scroll 0 0;
+    background: #0b3b6e none repeat scroll 0 0;
     border: medium none;
     border-radius: 5px;
     font-family: "Raleway", sans-serif;
@@ -404,7 +412,7 @@ hr {
     padding: 15px 20px;
     width: 200px;
     color: white;
-    background: #1de9b6 none repeat scroll 0 0;
+    background: #0b3b6e none repeat scroll 0 0;
     border: medium none;
     border-radius: 5px;
     font-family: "Raleway", sans-serif;
@@ -428,7 +436,7 @@ hr {
     letter-spacing: 1px;
     width: 1000px;
     line-height: 65px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-left: 50%;
     text-align: center;
 }
@@ -456,7 +464,7 @@ hr {
     letter-spacing: 1px;
     width: 1000px;
     line-height: 65px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* usuario.html */
@@ -467,7 +475,7 @@ hr {
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 65px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* linea vertical usuario.html */
@@ -484,6 +492,12 @@ hr {
 /* datos izquierda usuario.html */
 .datosIzquierda{
     margin-left: 250px;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #0b3b6e;
+    width: 500px;
+    padding: 10px;
 }
 
 /* datos izquierda usuario.html */
@@ -493,9 +507,8 @@ hr {
     font-size: 55px;
     font-weight: 800;
     letter-spacing: 1px;
-    width: 1000px;
     line-height: 65px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* datos izquierda usuario.html */
@@ -503,16 +516,18 @@ hr {
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 35px;
-    font-weight: 800;
+    /* font-weight: 800; */
     letter-spacing: 1px;
     line-height: 65px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* datos derecha usuario.html */
 .datosDerecha{
-    margin-top: -316px;
-    margin-left: 70%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0b3b6e;
 }
 
 /* datos derecha usuario.html */
@@ -524,19 +539,15 @@ hr {
     letter-spacing: 1px;
     line-height: 65px;
     text-transform: uppercase;
-    margin-bottom: 40px;
-    margin-top: -75px;
     width: 600px;
 }
 
-.datosDerecha h4{
+.datosDerecha h5{
     color: #fff;
     font-family: "Raleway", sans-serif;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 800;
-    letter-spacing: 1px;
-    line-height: 65px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* input derecha usuario.html */

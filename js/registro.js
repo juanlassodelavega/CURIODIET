@@ -31,8 +31,6 @@ function guardar(){
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-    console.log("Prueba 1 ok")
-
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(userCredential) {
         nuevoID = userCredential.user.uid;
         console.log(nuevoID);
@@ -45,7 +43,8 @@ function guardar(){
             estatura: estatura,
             pais: pais,
             sexo: sexo,
-            email: email
+            email: email,
+            dieta: ""
         })
 
     }).catch(function(error) {
@@ -53,22 +52,7 @@ function guardar(){
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
-    //   }).then(function(docRef) {
-    //     console.log("Document written with ID: ", docRef.id);
-    //     document.getElementById('nombre').value = '';
-    //     document.getElementById('apellido').value = '';
-    //     document.getElementById('edad').value = '';
-    //     document.getElementById('telefono').value = '';
-    //     document.getElementById('peso').value = '';
-    //     document.getElementById('estatura').value = '';
-    //     document.getElementById('pais').value = '';
-    //     document.getElementById('sexo').value = '';
-    //     document.getElementById('email').value = '';
-
-    //     // location.href="login.html";
-    // })
-    
-    // .catch(function(error) {
-    //     console.error("Error adding document: ", error);
+    }).then(function() {
+        location.href="login.html";
     });
 }

@@ -32,15 +32,10 @@ function entrada(){
     docRef.get().then(function(doc) {
         if (doc.exists) {
             console.log("Document data:", doc.data());
-            // console.log(doc.data().nombre);
-            // console.log(doc.get("nombre"));
             nUsuario = doc.get("nombre");
-            console.log(nUsuario);
             dieta = doc.get("dieta");
-            console.log(dieta);
             document.getElementById('saludo').innerHTML = "<h3>Bienvenido, " + nUsuario + "</h3>"
             document.getElementById('datos').innerHTML = "<h3>Mis datos</h3>" +
-            "<br>" +
             "<h4>Peso: " + doc.get("peso") + "</h4>" +
             "<h4>Estatura: " + doc.get("estatura") +  "</h4>" +
             "<h4>Sexo: " + doc.get("sexo") + "</h4>" +
@@ -54,19 +49,14 @@ function entrada(){
     }).then(function(){
         var docRefDieta = db.collection('dietas').doc(dieta);
         docRefDieta.get().then(function(doc){
-            console.log(doc.get("cena"));
             document.getElementById('dietas').innerHTML = "<h3>Dieta que sigo</h3>"+
-            "<br>"+
-            "<h4> Desayuno: " + doc.get("desayuno") + "</h4>" + "<br>" +
-            "<h4> Media mañana: " + doc.get("media_manana") + "</h4>" + "<br>" +
-            "<h4> Comida: " + doc.get("comida") + "</h4>" + "<br>" +
-            "<h4> Media tarde: " + doc.get("media_tarde") + "</h4>" + "<br>" +
-            "<h4> Cena: " + doc.get("cena") + "</h4>"
+            "<h5> Desayuno: " + doc.get("desayuno") + "</h5>" + "<br>" +
+            "<h5> Media mañana: " + doc.get("media_manana") + "</h5>" + "<br>" +
+            "<h5> Comida: " + doc.get("comida") + "</h5>" + "<br>" +
+            "<h5> Media tarde: " + doc.get("media_tarde") + "</h5>" + "<br>" +
+            "<h5> Cena: " + doc.get("cena") + "</h5>"
         })
     });
-
-    "<h6>Aquí podrás ver tus datos y tus dietas.</h6>";
-    console.log("eeeeeee");
 }
 
 function cerrarSesion(){

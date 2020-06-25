@@ -243,7 +243,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -314,7 +314,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -366,7 +366,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -377,7 +377,7 @@
 
     /* usuario.html */
     .usuario{
-        margin-left: -330px;
+        margin-left: -75px;
         margin-top: 50px;
         margin-right: 600px;
     }
@@ -415,6 +415,7 @@
         /* datos izquierda usuario.html */
     .datosIzquierda{
         margin-left: 50px;
+        width: 425px;
     }
 
     .datosIzquierda h3{
@@ -443,6 +444,8 @@
     .datosDerecha{
         margin-top: 50px;
         margin-left: 50px;
+        width: 425px;
+        margin-bottom: 50px;
     }
 
     .datosDerecha h3{
@@ -454,6 +457,7 @@
         line-height: 65px;
         text-transform: uppercase;
         margin-bottom: 40px;
+        /* margin-top: 100px; */
     }    
     
     /* input derecha usuario.html */
@@ -722,7 +726,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -787,7 +791,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -839,7 +843,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -888,7 +892,8 @@
 
         /* datos izquierda usuario.html */
     .datosIzquierda{
-        margin-left: 100px;
+        margin-left: 50px;
+        width: 675px;
     }
 
     .datosIzquierda h3{
@@ -916,7 +921,8 @@
     /* datos derecha usuario.html */
     .datosDerecha{
         margin-top: 50px;
-        margin-left: 100px;
+        margin-left: 50px;
+        width: 675px;
     }
 
     .datosDerecha h3{
@@ -1206,7 +1212,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -1271,7 +1277,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -1321,7 +1327,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -1707,7 +1713,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -1773,7 +1779,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -1840,7 +1846,7 @@
         padding: 15px 20px;
         width: 200px;
         color: white;
-        background: #1de9b6 none repeat scroll 0 0;
+        background: #0b3b6e none repeat scroll 0 0;
         border: medium none;
         border-radius: 5px;
         font-family: "Raleway", sans-serif;
@@ -1919,7 +1925,7 @@
     
     /* datos izquierda usuario.html */
     .datosIzquierda{
-        margin-left: 250px;
+        margin-left: 150px;
     }
     
     /* datos izquierda usuario.html */
@@ -1947,7 +1953,7 @@
     
     /* datos derecha usuario.html */
     .datosDerecha{
-        margin-top: -316px;
+        margin-top: -390px;
         margin-left: 70%;
     }
     
