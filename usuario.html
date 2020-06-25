@@ -26,42 +26,37 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="dietas.html">Dietas</a></li>
-                <li><a href="registro.html">Registro</a></li>
+                <li><a href="usuario.html">Mi perfil</a></li>
                 <li><a href="contacto.html">Contacto</a></li>       
-                <li><a href="login.html" id="login">Cerar Sesión</a></li>
+                <li><a onclick="cerrarSesion()" id="login">Cerrar Sesión</a></li>
             </ul>
         </div>
         <hr>
     
-        <div class="usuario">
-            <h3>Bienvendio, (usuario)</h3>
+        <div class="usuario" id="saludo">
+            <h3>Bienvenido, (placeholder) </h3>
             <h6>Aquí podrás ver tus datos y tus dietas.</h6>
         </div>
 
-        <div class="datosIzquierda">
+        <div class="datosIzquierda" id="datos">
             <h3>Mis datos</h3>
             <br>
-            <h4>Peso: <h4>
+            <h4>Peso: </h4>
             <h4>Estatura: </h4>
             <h4>Sexo: </h4>
+            <h4>Dieta actual: </h4>
         </div>
 
         <div class="vl"></div>
 
-    <div class="datosDerecha">
-        <h3>Mis dietas</h3>
-            <div>
-                <input type="text" placeholder="Desayuno" id="input_area">
-            </div>
-            <div>
-                <input type="text" placeholder="Comida" id="input_area">
-            </div>
-            <div>
-                <input type="text" placeholder="Cena" id="input_area">
-            </div>
-            <div>
-                <input type="submit" onclick="" id="botonAñadir" value="Añadir">
-            </div>
+    <div class="datosDerecha" id="dietas">
+        <h3>Dieta que sigo</h3>
+        <br>
+        <h4> Desayuno: </h4>
+        <h4> Media mañana: </h4>
+        <h4> Comida: </h4>
+        <h4> Media tarde: </h4>
+        <h4> Cena: </h4>
     </div>
 
     <!-- Optional JavaScript -->
