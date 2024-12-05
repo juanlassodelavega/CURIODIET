@@ -1,6 +1,8 @@
-import { auth } from "./firebase.js";
+import { auth, db } from "./firebase.js";
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
+// Manejo de la barra de navegación según el estado del usuario
 const navItems = document.getElementById("nav-items");
 const loginLink = document.getElementById("login-link");
 const logoutLink = document.getElementById("logout-link");
@@ -38,3 +40,48 @@ logoutLink.addEventListener("click", async () => {
         alert("Hubo un error al cerrar la sesión.");
     }
 });
+
+// Función para obtener dietas desde Firestore
+async function fetchDiets() {
+    const dietsCollection = collection(db, "diets");
+    const snapshot = await getDocs(dietsCollection);
+    const diets = snapshot.docs.map(doc => doc.data());
+    return diets;
+}
+
+// Función para renderizar dietas en el DOM
+async function displayDiets() {
+    const diets = await fetchDiets();
+    const container = document.getElementById("diet-container");
+    // container.innerHTML = ""; // Limpia las dietas predeterminadas
+
+    if (diets.length === 0) {
+        container.innerHTML = `
+            <p class="text-center">No hay dietas disponibles por ahora. Vuelve más tarde.</p>
+        `;
+        return;
+    }
+
+    diets.forEach(diet => {
+        const dietHTML = `
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="border p-3 rounded flex-grow-1 d-flex flex-column justify-content-between">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Desayuno:</strong> ${diet.desayuno || "No especificado"}</li>
+                    <li class="list-group-item"><strong>Media mañana:</strong> ${diet.media_mañana || "No especificado"}</li>
+                    <li class="list-group-item"><strong>Comida:</strong> ${diet.comida || "No especificado"}</li>
+                    <li class="list-group-item"><strong>Media tarde:</strong> ${diet.media_tarde || "No especificado"}</li>
+                    <li class="list-group-item"><strong>Cena:</strong> ${diet.cena || "No especificado"}</li>
+                </ul>
+                <div class="text-center">
+                    <br>
+                    <button class="btn btn-secondary">Apuntarme a esta dieta</button>
+                </div>
+            </div>
+        </div>`;
+        container.insertAdjacentHTML('beforeend', dietHTML);
+    });
+}
+
+// Llama a la función para mostrar las dietas al cargar la página
+displayDiets();
